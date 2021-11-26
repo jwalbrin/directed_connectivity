@@ -38,6 +38,5 @@ for sbj = subjRange
         allSeedTCMat(:,sd) = mean(ds_seed.samples,2);
     end
     % save data     
-    splited = split(fileName, '.');
-    writematrix(allSeedTCMat,append(append(outputpath, string(splited(1, :))), '.csv')) 
+    writematrix(allSeedTCMat,append(append(outputpath, cSubj), '.csv')) 
 end
